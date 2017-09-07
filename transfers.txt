@@ -1,0 +1,29 @@
+/* 1 */
+{
+    "_id" : ObjectId("597a0b56101f12a4f647a29a"),
+    "fromId" : ObjectId("59795399101f12a4f6477e16"),
+    "fromClub" : "Bayern Munich",
+    "toId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "toClub" : "Real Madrid",
+    "playerId" : ObjectId("59796af9101f12a4f647881d"),
+    "playerName" : "Toni Kroos",
+    "approved" : true,
+    "date" : "07/17/2014",
+    "transfer_fee" : "£25.50m",
+    "readByAdmin" : true
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("597a0d5e101f12a4f647a3f9"),
+    "fromId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "fromClub" : "Real Madrid",
+    "toId" : ObjectId("59795399101f12a4f6477e16"),
+    "toClub" : "Bayern Munich",
+    "playerId" : ObjectId("59795c7a101f12a4f6478195"),
+    "playerName" : "Arjen Robben",
+    "approved" : true,
+    "date" : "08/28/2009",
+    "transfer_fee" : "£20.40m",
+    "readByAdmin" : true
+}

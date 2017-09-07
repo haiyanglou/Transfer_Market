@@ -1,0 +1,31 @@
+/* 1 */
+{
+    "_id" : ObjectId("598082e1e32224703eb83884"),
+    "fromId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "fromClub" : "Real Madrid",
+    "toId" : ObjectId("59795399101f12a4f6477e16"),
+    "toClub" : "Bayern Munich",
+    "playerId" : ObjectId("59795c7a101f12a4f6478195"),
+    "playerName" : "Arjen Robben",
+    "transferId" : ObjectId("597a0d5e101f12a4f647a3f9"),
+    "approved" : true,
+    "transfer_fee" : "£20.40m",
+    "readByFrom" : false,
+    "readByTo" : true
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5980834ee32224703eb838ed"),
+    "fromId" : ObjectId("59795399101f12a4f6477e16"),
+    "fromClub" : "Bayern Munich",
+    "toId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "toClub" : "Real Madrid",
+    "playerId" : ObjectId("59796af9101f12a4f647881d"),
+    "playerName" : "Toni Kroos",
+    "transferId" : ObjectId("597a0b56101f12a4f647a29a"),
+    "approved" : true,
+    "transfer_fee" : "£20.40m",
+    "readByFrom" : false,
+    "readByTo" : false
+}

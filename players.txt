@@ -1,0 +1,705 @@
+/* 1 */
+{
+    "_id" : ObjectId("59795ba3101f12a4f6478136"),
+    "name" : "Mats Hummels",
+    "image" : "mats_hummels_tn",
+    "age" : 28,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "191cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 428,
+        "goal" : 41,
+        "assist" : 19,
+        "yellow_card" : 47,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("59795c09101f12a4f6478165"),
+    "name" : "David Alaba",
+    "image" : "david_alaba_tn",
+    "age" : 25,
+    "nationality" : "Austria",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "180cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£32.30m",
+    "performance" : {
+        "appearance" : 375,
+        "goal" : 39,
+        "assist" : 45,
+        "yellow_card" : 13,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("59795c7a101f12a4f6478195"),
+    "name" : "Arjen Robben",
+    "image" : "arjen_robben_tn",
+    "age" : 33,
+    "nationality" : "Netherlands",
+    "position" : [ 
+        "Striker"
+    ],
+    "height" : "180cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£8.50m",
+    "performance" : {
+        "appearance" : 547,
+        "goal" : 195,
+        "assist" : 147,
+        "yellow_card" : 45,
+        "red_card" : 2
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("59795cf4101f12a4f64781d0"),
+    "name" : "Franck Ribéry",
+    "image" : "franck_ribery_tn",
+    "age" : 34,
+    "nationality" : "France",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "170cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£5.95m",
+    "performance" : {
+        "appearance" : 477,
+        "goal" : 131,
+        "assist" : 195,
+        "yellow_card" : 55,
+        "red_card" : 3
+    },
+    "shelf" : true,
+    "delete" : false
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("59795da8101f12a4f6478221"),
+    "name" : "Thiago",
+    "image" : "thiago_tn",
+    "age" : 26,
+    "nationality" : "Spain",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "174cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 232,
+        "goal" : 29,
+        "assist" : 43,
+        "yellow_card" : 21,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("59795e1e101f12a4f6478254"),
+    "name" : "James Rodríguez",
+    "image" : "jamas_ rodriguez_tn",
+    "age" : 26,
+    "nationality" : "Colombia",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "180cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£42.50m",
+    "performance" : {
+        "appearance" : 304,
+        "goal" : 87,
+        "assist" : 102,
+        "yellow_card" : 32,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("59795e85101f12a4f6478283"),
+    "name" : "Jérôme Boateng",
+    "image" : "jerome_boateng_tn",
+    "age" : 28,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "192cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£32.30m",
+    "performance" : {
+        "appearance" : 417,
+        "goal" : 12,
+        "assist" : 25,
+        "yellow_card" : 75,
+        "red_card" : 7
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("59795f00101f12a4f64782b9"),
+    "name" : "Javi Martínez",
+    "image" : "javi_martinez_tn",
+    "age" : 28,
+    "nationality" : "Spain",
+    "position" : [ 
+        "Defender", 
+        "Midfield"
+    ],
+    "height" : "190cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£25.50m",
+    "performance" : {
+        "appearance" : 394,
+        "goal" : 32,
+        "assist" : 13,
+        "yellow_card" : 95,
+        "red_card" : 3
+    },
+    "shelf" : true,
+    "delete" : false
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("59795f64101f12a4f64782e7"),
+    "name" : "Robert Lewandowski",
+    "image" : "robert_lewandowski_tn",
+    "age" : 28,
+    "nationality" : "Poland",
+    "position" : [ 
+        "Striker"
+    ],
+    "height" : "184cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£68.00m",
+    "performance" : {
+        "appearance" : 448,
+        "goal" : 275,
+        "assist" : 93,
+        "yellow_card" : 44,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("59796011101f12a4f6478334"),
+    "name" : "Joshua Kimmich",
+    "image" : "joshua_kimmich_tn",
+    "age" : 22,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Defender", 
+        "Midfield"
+    ],
+    "height" : "176cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£21.25m",
+    "performance" : {
+        "appearance" : 190,
+        "goal" : 21,
+        "assist" : 20,
+        "yellow_card" : 28,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5979609e101f12a4f6478372"),
+    "name" : "Arturo Vidal",
+    "image" : "arturo_vidal_tn",
+    "age" : 30,
+    "nationality" : "Chile",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "180cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£29.75m",
+    "performance" : {
+        "appearance" : 405,
+        "goal" : 85,
+        "assist" : 62,
+        "yellow_card" : 116,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("59796440101f12a4f647850f"),
+    "name" : "Shkodran Mustafi",
+    "image" : "shkodran_mustafi_tn",
+    "age" : 25,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "184cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Arsenal",
+    "clubId" : ObjectId("59795509101f12a4f6477e8b"),
+    "market_value" : "£25.50m",
+    "performance" : {
+        "appearance" : 247,
+        "goal" : 14,
+        "assist" : 8,
+        "yellow_card" : 53,
+        "red_card" : 4
+    },
+    "shelf" : true,
+    "delete" : false
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("597964d4101f12a4f647854c"),
+    "name" : "Héctor Bellerín",
+    "image" : "hector_bellerin_tn",
+    "age" : 22,
+    "nationality" : "Spain",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "178cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Arsenal",
+    "clubId" : ObjectId("59795509101f12a4f6477e8b"),
+    "market_value" : "£25.50m",
+    "performance" : {
+        "appearance" : 158,
+        "goal" : 9,
+        "assist" : 20,
+        "yellow_card" : 18,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("59796540101f12a4f647857a"),
+    "name" : "Alexis Sánchez",
+    "image" : "alexis_sanchez_tn",
+    "age" : 29,
+    "nationality" : "Chile",
+    "position" : [ 
+        "Striker"
+    ],
+    "height" : "169cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Arsenal",
+    "clubId" : ObjectId("59795509101f12a4f6477e8b"),
+    "market_value" : "£55.25m",
+    "performance" : {
+        "appearance" : 428,
+        "goal" : 144,
+        "assist" : 101,
+        "yellow_card" : 63,
+        "red_card" : 1
+    },
+    "shelf" : true,
+    "delete" : false
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("597965b7101f12a4f64785ac"),
+    "name" : "Mesut Özil",
+    "image" : "mesut_ozil_tn",
+    "age" : 28,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "180cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Arsenal",
+    "clubId" : ObjectId("59795509101f12a4f6477e8b"),
+    "market_value" : "£42.50m",
+    "performance" : {
+        "appearance" : 511,
+        "goal" : 93,
+        "assist" : 197,
+        "yellow_card" : 40,
+        "red_card" : 3
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("597968a3101f12a4f6478701"),
+    "name" : "Sergio Ramos",
+    "image" : "sergio_ramos_tn",
+    "age" : 31,
+    "nationality" : "Spain",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "183cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 567,
+        "goal" : 71,
+        "assist" : 37,
+        "yellow_card" : 188,
+        "red_card" : 7
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("59796a45101f12a4f64787c7"),
+    "name" : "Marcelo",
+    "image" : "marcelo_tn",
+    "age" : 29,
+    "nationality" : "Brazil",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "174cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£32.30m",
+    "performance" : {
+        "appearance" : 415,
+        "goal" : 31,
+        "assist" : 76,
+        "yellow_card" : 70,
+        "red_card" : 1
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("59796af9101f12a4f647881d"),
+    "name" : "Toni Kroos",
+    "image" : "toni_kroos_tn",
+    "age" : 27,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "182cm",
+    "foot" : [ 
+        "right", 
+        "left"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£59.50m",
+    "performance" : {
+        "appearance" : 435,
+        "goal" : 52,
+        "assist" : 112,
+        "yellow_card" : 64,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("59796ba0101f12a4f647886e"),
+    "name" : "Luka Modric",
+    "image" : "luka_modric_tn",
+    "age" : 31,
+    "nationality" : "Croatia",
+    "position" : [ 
+        "Midfield"
+    ],
+    "height" : "174cm",
+    "foot" : [ 
+        "right", 
+        "left"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 442,
+        "goal" : 49,
+        "assist" : 80,
+        "yellow_card" : 54,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("59796be8101f12a4f6478890"),
+    "name" : "Daniel Carvajal",
+    "image" : "daniel_carvajal_tn",
+    "age" : 25,
+    "nationality" : "Spain",
+    "position" : [ 
+        "Defender"
+    ],
+    "height" : "173cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "",
+    "performance" : {
+        "appearance" : 196,
+        "goal" : 5,
+        "assist" : 33,
+        "yellow_card" : 58,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("59796c4e101f12a4f64788c5"),
+    "name" : "Cristiano Ronaldo",
+    "image" : "cristiano_ronaldo_tn",
+    "age" : 32,
+    "nationality" : "Portugal",
+    "position" : [ 
+        "Striker"
+    ],
+    "height" : "185cm",
+    "foot" : [ 
+        "right", 
+        "left"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£85.00m",
+    "performance" : {
+        "appearance" : 688,
+        "goal" : 524,
+        "assist" : 187,
+        "yellow_card" : 89,
+        "red_card" : 6
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("59796cb6101f12a4f64788f8"),
+    "name" : "Gareth Bale",
+    "image" : "gareth_bale_tn",
+    "age" : 28,
+    "nationality" : "Wales",
+    "position" : [ 
+        "Striker"
+    ],
+    "height" : "183cm",
+    "foot" : [ 
+        "left"
+    ],
+    "club" : "Real Madrid",
+    "clubId" : ObjectId("597955dd101f12a4f6477ec5"),
+    "market_value" : "£68.00m",
+    "performance" : {
+        "appearance" : 397,
+        "goal" : 128,
+        "assist" : 121,
+        "yellow_card" : 36,
+        "red_card" : 2
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5979590a101f12a4f6478011"),
+    "name" : "Thomas Müller",
+    "image" : "thomas_muller_tn",
+    "age" : 27,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Striker", 
+        "Goal Keeper"
+    ],
+    "height" : "186cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£42.50m",
+    "performance" : {
+        "appearance" : 483,
+        "goal" : 203,
+        "assist" : 134,
+        "yellow_card" : 25,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5973cadb101f12a4f646fec0"),
+    "name" : "hhhh",
+    "image" : "manuel_neuer_tn",
+    "age" : 31,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Striker", 
+        "Goal Keeper"
+    ],
+    "height" : "193cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 553,
+        "concede_goal" : 435,
+        "yellow_card" : 17,
+        "red_card" : 0
+    },
+    "shelf" : true,
+    "delete" : true
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("597959ec101f12a4f6478076"),
+    "name" : "Manuel Neuer",
+    "image" : "manuel_neuer_tn",
+    "age" : 31,
+    "nationality" : "Germany",
+    "position" : [ 
+        "Striker", 
+        "Goal Keeper"
+    ],
+    "height" : "193cm",
+    "foot" : [ 
+        "right"
+    ],
+    "club" : "Bayern Munich",
+    "clubId" : ObjectId("59795399101f12a4f6477e16"),
+    "market_value" : "£34.00m",
+    "performance" : {
+        "appearance" : 553,
+        "concede_goal" : 435,
+        "yellow_card" : 17,
+        "red_card" : 0
+    },
+    "shelf" : false,
+    "delete" : false
+}

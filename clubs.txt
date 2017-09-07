@@ -1,0 +1,67 @@
+/* 1 */
+{
+    "_id" : ObjectId("59795399101f12a4f6477e16"),
+    "name" : "Bayern Munich",
+    "image" : "bayern_munchen_tn",
+    "league" : "bundesliga",
+    "champions" : {
+        "CHAMPIONS_LEAGUE" : 2,
+        "EUROPEAN_CHAMPION" : 3,
+        "GERMAN_CHAMPION" : 27,
+        "GERMAN_CUP" : 18,
+        "GERMAN_SUPERCUP" : 5,
+        "FIFA_CLUB_WORLD_CUP" : 1,
+        "UEFA_CUP" : 1,
+        "UEFA_SUPER_CUP" : 1
+    },
+    "stadium" : "Allianz Arena",
+    "transfers" : [ 
+        ObjectId("597a0b56101f12a4f647a29a"), 
+        ObjectId("597a0d5e101f12a4f647a3f9")
+    ],
+    "favor" : [ 
+        ObjectId("59796540101f12a4f647857a"), 
+        ObjectId("59796be8101f12a4f6478890")
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("59795509101f12a4f6477e8b"),
+    "name" : "Arsenal",
+    "image" : "arsenal_tn",
+    "league" : "premier league",
+    "champions" : {
+        "ENGLISH_CHAMPION" : 13,
+        "FA_CUP" : 13,
+        "ENGLISH_LEAGUE_CUP" : 2,
+        "ENGLISH_SUPERCUP" : 1
+    },
+    "stadium" : "Emirates Stadium",
+    "transfers" : [],
+    "favor" : []
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("597955dd101f12a4f6477ec5"),
+    "name" : "Real Madrid",
+    "image" : "real_madrid_tn",
+    "league" : "LaLiga",
+    "champions" : {
+        "CHAMPIONS_LEAGUE" : 6,
+        "EUROPEAN_CHAMPION" : 6,
+        "SPANISH_CHAMPION" : 33,
+        "SPANISH_CUP" : 19,
+        "SPANISH_SUPER_CUP" : 9,
+        "FIFA_CLUB_WORLD_CUP" : 2,
+        "UEFA_CUP" : 2,
+        "UEFA_SUPER_CUP" : 3
+    },
+    "stadium" : "Santiago Bernabéu",
+    "transfers" : [ 
+        ObjectId("597a0b56101f12a4f647a29a"), 
+        ObjectId("597a0d5e101f12a4f647a3f9")
+    ],
+    "favor" : []
+}
