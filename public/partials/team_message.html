@@ -1,0 +1,21 @@
+<section>
+     <div id ="team_meaasge">
+        <table class="table">
+            <th>Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Fee</th>
+            <th>Approved</th>
+            <th>Read</th>
+            <tr ng-repeat="message in messages">
+                <td><a href="/player#/{{message.playerId}}" target="_blank">{{message.playerName}}</a></td>
+                <td>{{message.fromClub}}</td>
+                <td>{{message.toClub}}</td>
+                <td>{{message.transfer_fee}}</td>
+                <td ng-if ="message.approved == true" >Yes</td>
+                <td ng-if ="message.approved == false" >No</td>
+                <td><input type="button" class="btn btn-primary" value="Read" ng-click="read(message)"/></td>
+            </tr>
+        </table>
+    </div>
+</section>

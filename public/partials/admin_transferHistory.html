@@ -1,0 +1,19 @@
+<section>
+     <div id ="admin_transfer_history">
+        <table class="table">
+            <th>Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Fee</th>
+            <th>Approved</th>
+            <tr ng-repeat="transferHistory in transferHistories">
+                <td><a href="/player#/{{transferHistory.playerId}}" target="_blank">{{transferHistory.playerName}}</a></td>
+                <td><a href="/club#/{{transferHistory.fromId}}" target="_blank">{{transferHistory.fromClub}}</a></td>
+                <td><a href="/club#/{{transferHistory.toId}}" target="_blank">{{transferHistory.toClub}}</a></td>
+                <td>{{transferHistory.transfer_fee}}</td>
+                <td ng-if ="transferHistory.approved == true" >Yes</td>
+                <td ng-if ="transferHistory.approved == false" >No</td>
+            </tr>
+        </table>
+    </div>
+</section>

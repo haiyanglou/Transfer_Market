@@ -1,0 +1,199 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <ul class="nav nav-pills nav-stacked">
+            <li id = "show-teamInfo" role="presentation" class="active"><a> Info</a></li>
+            <li id = "show-transfer-history" role="presentation" ng-click="showTransferHistory()" ><a>Transfer History</a></li>
+            <li id = "show-shelf" role="presentation" ng-click="showShelf()" ><a>Shelf</a></li>
+            <li id = "show-manage-player" role="presentation" ng-click="showManage()" ><a>Manage Player</a></li>
+            <li id = "show-add-player" role="presentation" ng-click="showAdd()" ><a>Add Player</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-9">
+            <div id ="teamInfo">
+                <img ng-src="/images/{{club.image}}.png" alt="{{club.name}}" />
+                <p>League:{{club.league}}</p>
+                <p>Stadium:{{club.stadium}}</p>
+                <br/>
+                <table class="table">
+                    <th>champions</th>
+                    <th>Numbers</th>
+                    <tr ng-repeat='(key, val) in club.champions'>
+                        <td>{{key}}</td>
+                        <td>{{val}}</td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Height</th>
+                    <th>Position</th>
+                    <th>Value</th>
+                    <tr ng-repeat="player in playersName">
+                        <td><a href="/player#/{{player._id}}" target="_blank">{{player.name}}</a></td>
+                        <td>{{ player.age }}</td>
+                        <td>{{ player.height }}</td>
+                        <td>{{ player.position }}</td>
+                        <td>{{ player.market_value }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div id ="transfer-history" style="display:none">
+                <table class="table">
+                    <th>Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Fee</th>
+                    <th>Date</th>
+                    <tr ng-repeat="transferHistory in transferHistories">
+                        <td><a href="/player#/{{transferHistory.playerId}}" target="_blank">{{transferHistory.playerName}}</a></td>
+                        <td>{{transferHistory.fromClub}}</td>
+                        <td>{{transferHistory.toClub}}</td>
+                        <td>{{transferHistory.transfer_fee}}</td>
+                        <td>{{transferHistory.date}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div id ="shelf" style="display:none">
+                <table class="table">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Height</th>
+                    <th>Position</th>
+                    <th>Value</th>
+                    <tr ng-repeat='onShelfPlayer in onShelfPlayers'>
+                        <td><a href="/player#/{{onShelfPlayer._id}}" target="_blank">{{onShelfPlayer.name}}</a></td>
+                        <td>{{ onShelfPlayer.age }}</td>
+                        <td>{{ onShelfPlayer.height }}</td>
+                        <td>{{ onShelfPlayer.position }}</td>
+                        <td>{{ onShelfPlayer.market_value }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div id ="manage-player" style="display:none">
+                <div ng-repeat="player in playersName" class="col-sm-4"> 
+                    <div class="thumbnail club">
+                        <img ng-src="/images/{{player.image}}" alt={{player.name}}>  
+                        <div class="caption">
+                            <p><a href="/player#/{{player._id}}" target="_blank">{{player.name}}</a></p>
+                            <p>
+                                <a href="myteam#/player/{{player._id}}" target="_blank" class="btn btn-primary" style="width:100px" role="button">Edit</a>
+                                <a href="myteam#/player/delete/{{player._id}}" target="_blank" class="btn btn-primary" style="width:100px" role="button">Delete</a>
+                            </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id ="add-player" style="display:none">
+                <form class="form-horizontal" ng-submit="save()">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-4">
+                        <input type="file" id = "file" name="image">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Name</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" ng-model="addPlayer.name" required></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Age</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" ng-model="addPlayer.age" required></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Height</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" ng-model="addPlayer.height" required></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Market_value</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" ng-model="addPlayer.market_value" required></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Position</label>
+                        <div class="col-sm-4">
+                            <select class="selectpicker" ng-model="addPlayer.position" required>
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="Goal Keeper">Goal Keeper</option>
+                                <option value="Defender">Defender</option>
+                                <option value="Midfield">Midfield</option>
+                                <option value="Striker">Striker</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Foot</label>
+                        <div class="col-sm-4">
+                             <select class="selectpicker" ng-model="addPlayer.foot" required>
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="left">Right</option>
+                                <option value="right">Left</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Nation</label>
+                        <div class="col-sm-4">
+                            <select class="selectpicker" ng-model="addPlayer.nationality" required>
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="China">China</option>
+                                <option value="Germany">Germany</option>
+                                <option value="U.S.">U.S.</option>
+                                <option value="Spain">Spain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-4">
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $("#show-teamInfo").on("click",function(event){
+           event.preventDefault();
+            $("#manage-player, #transfer-history, #shelf, #add-player").hide();
+            $("#teamInfo").show();
+            $("#show-manage-player, #show-transfer-history, #show-shelf, #show-add-player").removeClass('active');
+            $("#show-teamInfo").addClass('active');
+        });
+        $("#show-transfer-history").on("click",function(event){
+            event.preventDefault();
+            $("#manage-player, #teamInfo, #shelf, #add-player").hide();
+            $("#transfer-history").show();
+            $("#show-manage-player, #show-teamInfo, #show-shelf, #show-add-player").removeClass('active');
+            $("#show-transfer-history").addClass('active');
+        });
+        $("#show-shelf").on("click",function(event){
+            event.preventDefault();
+            $("#manage-player, #transfer-history, #teamInfo, #add-player").hide();
+            $("#shelf").show();
+            $("#show-manage-player, #show-transfer-history, #show-teamInfo, #show-add-player").removeClass('active');
+            $("#show-shelf").addClass('active');
+        });
+        $("#show-manage-player").on("click",function(event){
+            event.preventDefault();
+           $("#teamInfo, #transfer-history, #shelf, #add-player").hide();
+           $("#manage-player").show();
+           $("#show-teamInfo, #show-transfer-history, #show-shelf, #show-add-player").removeClass('active');
+           $("#show-manage-player").addClass('active');
+        });
+        $("#show-add-player").on("click",function(event){
+            event.preventDefault();
+           $("#teamInfo, #transfer-history, #shelf, #manage-player").hide();
+           $("#add-player").show();
+           $("#show-teamInfo, #show-transfer-history, #show-shelf, #show-manage-player").removeClass('active');
+           $("#show-add-player").addClass('active');
+        });
+    </script>

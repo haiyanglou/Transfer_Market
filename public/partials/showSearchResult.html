@@ -1,0 +1,82 @@
+  
+<section>
+    <!-- SEARCH FILTER -->
+    <hr>
+        <div class = 'container'>
+            <form class= "searchbox">
+                <fieldset>
+                    <div class='row'>
+                        <div class="col-sm-4">
+                            <label>Nation</label>
+                            <select class="selectpicker" data-size="5" ng-model = "nationality" ng-change="searchFilter()">
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="China">China</option>
+                                <option value="Germany">Germany</option>
+                                <option value="U.S.">U.S.</option>
+                                <option value="Spain">Spain</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Position</label>
+                            <select class="selectpicker" data-size="5" ng-model = "position" ng-change="searchFilter()">
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="Goal Keeper">Goal Keeper</option>
+                                <option value="Defender">Defender</option>
+                                <option value="Midfield">Midfield</option>
+                                <option value="Striker">Striker</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Foot</label>
+                            <select class="selectpicker" data-size="5" ng-model = "foot" ng-change="searchFilter()">
+                                <option disabled = "disabled" selected = "selected" value=""> -- select an option -- </option>
+                                <option value="right">Right</option>
+                                <option value="left">Left</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-4">
+                         <form class="form-inline">
+                                <div class="input-group">
+                                    <input type="text" name="name" ng-model = "newSearchName" class="form-control" size="50" />
+                                    <div class="input-group-btn">
+                                    <input type="button" class="btn btn-primary" value="Search" ng-click="searchFilter()"></input>
+                                    <input type="button" class="btn btn-primary" value="Clear" ng-click="clear()"></input>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </fiedset>
+            </form>
+
+        </div>
+        <hr >
+ <!-- SEARCH RESULT -->
+        <!-- The result can be got by using Angular and API. Each result can link to single player page with player id. -->
+        <div class = "container" >
+            <div class="row" >
+                <div ng-repeat="player in players | offset: currentPage * playersPerPage | limitTo: playersPerPage" class="col-sm-6 col-md-4 col-lg-3"> 
+                    <div class="thumbnail thumbnail_without_button">
+                        <img ng-cloak ng-src="/images/{{player.image}}" alt={{player.name}}>  
+                        <div class="caption">
+                            <p><a href="/player#/{{player._id}}" ng-cloak target="_blank">{{player.name}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <li ng-class="prevPageDisabled()">
+                <a href ng-click="prevPage()">« Prev</a>
+                </li>
+                <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                <a >{{n+1}}</a>
+                </li>
+                <li ng-class="nextPageDisabled()">
+                <a href ng-click="nextPage()">Next »</a>
+                </li>
+            </div>
+        </div>
+<section>

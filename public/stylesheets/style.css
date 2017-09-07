@@ -1,0 +1,95 @@
+header {
+  font-family: Arial, Helvetica;
+  font-size: 16pt;
+  font-family: sans-serif, arial;
+  font-weight: bold;
+}
+
+footer {
+  font-family: Arial, Helvetica;
+  font-size: 12pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  padding: 40px;
+  padding-top: 20px;
+  font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:hover {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.index-background {
+  height: 620px;
+}
+
+.panel-body {
+  text-align: center;
+} 
+
+.title{
+    position:relative;
+    height: 52px;
+    line-height: 52px;
+    text-align: center; 
+}
+.jumbotron {
+  width:100%;
+  height:100%;
+  background-image:url("/images/c1.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.news {
+  height: 300px;
+}
+
+.thumbnail{        
+    width: 280px; 
+    height: 400px; 
+    overflow: auto; 
+    text-align: center;
+}
+.club{
+  height: 420px;
+}
+
+.thumbnail img{
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#message, #favortable, #teamInfo, #transfer-history, #shelf{
+  font-size: 16pt;
+  text-align: center;
+  color: darkblue;
+}
+#add-player {
+  font-size: 16pt;
+  color: darkblue;
+}
+
+th {
+  text-align: center;
+}
+
+#sidebar1 {
+  font-size: 16pt;
+  font-family: sans-serif, arial;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+}

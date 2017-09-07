@@ -1,0 +1,53 @@
+<section>
+    <div>
+        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+    </div>
+    <div class="thumbnail">
+        <img ng-cloak ng-src="/images/{{player.image}}" alt={{player.name}}>  
+        <div class="caption">
+            <p><a href="/player#/{{player._id}}" ng-cloak target="_blank">{{player.name}}</a></p>
+            <p>
+                <input type="button" class="btn btn-primary" ng-disabled="disableButton == true" value="Favor" ng-click="favor(player)"/>
+                <input type="button" class="btn btn-primary" ng-disabled="disableButton == true" value="Buy" ng-click="buy(player)"/>
+            </p>  
+        </div>
+    </div>
+    <p id="PLAYER DATA" class="link">PLAYER DATA
+        <table class="table">
+            <th>Name</th>
+            <th>Club</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Position</th>
+            <th>Value</th>
+            <tr>
+                <td><a href="/player#/{{player._id}}" target="_blank">{{player.name}}</a></td>
+                <td><a href="/club#/{{player.clubId}}" target="_blank">{{player.club}}</a></td>
+                <td>{{ player.age }}</td>
+                <td>{{ player.height }}</td>
+                <td>{{ player.position }}</td>
+                <td>{{ player.market_value }}</td>
+            </tr>
+        </table>
+    </p>
+    <p id="TRANSFERHISTORIE" class="link">TRANSFERHISTORIE
+        <table class="table">
+            <th>From</th>
+            <th>To</th>
+            <th>Fee</th>
+            <th>Date</th>
+            <tr ng-repeat="transferHistory in transferHistories">
+                <td>{{transferHistory.fromClub}}</td>
+                <td>{{transferHistory.toClub}}</td>
+                <td>{{transferHistory.transfer_fee}}</td>
+                <td>{{transferHistory.date}}</td>
+            </tr>
+        </table>
+    </p>
+    <p id="PERFORMANCE DATA" class="link">PERFORMANCE DATA
+        <table class="table">
+            <th ng-repeat='(key, val) in player.performance'>{{key}}</th>
+            <tr ><td ng-repeat='(key, val) in player.performance'>{{val}}</td></tr>
+        </table>
+    </p> 
+<section>

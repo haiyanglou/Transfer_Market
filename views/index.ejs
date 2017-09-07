@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<%- include('global/head', {title: "Welcome to Transfer Market!"}); %>
+	<body>
+		<%- include('global/header'); %>
+		<div class = "index-background">
+			<div class="jumbotron text-center">
+				<h1>Transfer Market</h1>
+				<p>Start Searching...</p>
+				<form class="form-inline" action="/search" method="get">
+					<div class="input-group">
+						<input type="text" name="name" class="form-control" size="50" placeholder="Search by player name.">
+						<div class="input-group-btn">
+						<button type="submit" class="btn">Search</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<%- include('global/footer'); %>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<div id ="teamInfo">
+    <img ng-src="/images/{{club.image}}.png" alt="{{club.name}}" />
+    <p>League:{{club.league}}</p>
+    <p>Stadium:{{club.stadium}}</p>
+    <br/>
+    <table class="table">
+        <th>champions</th>
+        <th>Numbers</th>
+        <tr ng-repeat='(key, val) in club.champions'>
+            <td>{{key}}</td>
+            <td>{{val}}</td>
+        </tr>
+    </table>
+    <table class="table">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Position</th>
+        <th>Value</th>
+        <tr ng-repeat="player in playersName">
+            <td><a href="/player#/{{player._id}}" target="_blank">{{player.name}}</a></td>
+            <td>{{ player.age }}</td>
+            <td>{{ player.height }}</td>
+            <td>{{ player.position }}</td>
+            <td>{{ player.market_value }}</td>
+        </tr>
+    </table>
+</div>

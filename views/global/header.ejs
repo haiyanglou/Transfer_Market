@@ -1,0 +1,33 @@
+<header>
+    <div class="panel panel-default">
+        <div class="panel-body" class="nav navbar-nav">
+            <% if (!hasLogin || type == "manager") { %>
+            <a class="title" href="/">Transfer Market</a>
+            <% } %>
+            <% if (hasLogin && type == "admin") { %>
+            <a class="title" href="/admin">Transfer Market</a>
+            <% } %>
+            <ul class="nav navbar-nav navbar-right">
+                <% if (!hasLogin) { %>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <% } %>
+                <% if (hasLogin) { %>
+                    <% if (type == "manager") { %>
+                    <li><a href="/myteam#/message">Message</a></li>
+                    <li></li>
+                    <li><a href="/myteam#/favor">My Favor</a></li>
+                    <li></li>
+                    <li><a href="/myteam"><%= user %> 's Team</a></li>
+                    <li></li>
+                    <li><a href="/logout">Sign Out</a></li> 
+                    <% } %>
+                    <% if (type == "admin") { %>
+                    <li><a href="/admin#/transferrequest">Transfer Request</a></li> 
+                    <li><a href="/admin#/transferhistory">Transfer History</a></li> 
+                    <li><a href="admin/logout">Sign Out</a></li> 
+                    <% } %>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<%- include('global/head', {title: "Welcome to Transfer Market, Admin!"}); %>
+	<body ng-app="AdminApp">
+		<%- include('global/header'); %>
+		<div ng-view ng-cloak></div>
+		
+		<%- include('global/footer'); %>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script type="text/javascript" src="/javascripts/admin.js"></script>
+</html>

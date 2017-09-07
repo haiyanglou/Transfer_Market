@@ -1,0 +1,20 @@
+<section>
+     <div id ="admin_transfer_request">
+        <table class="table">
+            <th>Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Fee</th>
+            <th>Approve</th>
+            <th>Decline</th>
+            <tr ng-repeat="transferRequest in transferRequests">
+                <td><a href="/player#/{{transferRequest.playerId}}" target="_blank">{{transferRequest.playerName}}</a></td>
+                <td>{{transferRequest.fromClub}}</td>
+                <td>{{transferRequest.toClub}}</td>
+                <td>{{transferRequest.transfer_fee}}</td>
+                <td><input type="button" class="btn btn-primary" value="Approve" ng-click="approve(transferRequest)"/></td>
+                <td><input type="button" class="btn btn-primary" value="Decline" ng-click="decline(transferRequest)"/></td>
+            </tr>
+        </table>
+    </div>
+</section>

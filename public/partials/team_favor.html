@@ -1,0 +1,17 @@
+<section>
+     <div id ="team_favor">
+        <table class="table">
+            <th>Name</th>
+             <th>Remove</th>
+             <th>Buy</th>
+            <tr ng-repeat="favorplayer in favorPlayers">
+                <td><a href="/player#/{{favorplayer._id}}" target="_blank">{{favorplayer.name}}</a></td>
+                 <td><input type="button" class="btn btn-primary" value="Remove" ng-click="remove(favorplayer)"/></td> 
+                 <td><input type="button" class="btn btn-primary" value="Buy" ng-click="buy(favorplayer)"/></td> 
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+    </div>
+</section>
